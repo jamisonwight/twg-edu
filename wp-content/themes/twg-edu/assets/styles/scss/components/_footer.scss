@@ -1,0 +1,89 @@
+footer {
+    width: 100%;
+    border-top: 4px solid $black;
+    padding: 40px 30px;
+    display: flex;
+
+    @include mq(large, 'max') {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-links {
+        width: calc(100% - 140px);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+
+        @include mq(large, 'max') {
+            order: 2;
+            width: 100%;
+        }
+        
+        ul {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+
+            @include mq(large, 'max') {
+                flex-wrap: wrap;
+            }
+
+            .divider {
+                margin: 0 5px;
+            }
+
+            li {
+                font-family: futura-pt,sans-serif;
+                font-weight: 500;
+                font-style: normal;
+                font-size: 14px;
+                letter-spacing: 0.7px;
+                text-transform: uppercase;
+                list-style-type: none;
+
+                @include mq(large, 'max') {
+                    font-size: 9px;
+                }
+
+                @include mq(large) {
+                    font-size: 12px;
+                }
+
+                @include mq(xlarge) {
+                    font-size: 14px;
+                }
+                
+                a {
+                    color: $black;
+                }
+            }
+        }
+    }
+
+    .copyright {
+        font-family: futura-pt,sans-serif;
+	    font-weight: 500;
+	    font-style: normal;
+        font-size: 14px;
+        letter-spacing: 0.7px;
+        margin-top: 10px;
+
+        @include mq(large, 'max') {
+            font-size: 9px;
+        }
+    }
+
+    .footer-logo {
+        width: 140px;
+
+        @include mq(large, 'max') {
+            order: 1;
+            margin-bottom: 20px;
+        }
+    }
+}

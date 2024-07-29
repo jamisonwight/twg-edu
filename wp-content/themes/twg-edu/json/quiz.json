@@ -1,0 +1,203 @@
+{
+    "questions": [
+        { 
+            "type": "multiple-options",
+            "question": "Place the red varietals under red & the white varietals under white.",
+            "label_heading": "Varietals",
+            "labels": ["Reds", "Whites"],
+            "options_layout": "stacked",
+            "options": [
+                {"title": "Chardonnay", "answer": "whites" },
+                {"title": "Cabernet Sauvignon", "answer": "reds" },
+                {"title": "Sauvignon Blanc", "answer": "whites" },
+                {"title": "Pinot Noir", "answer": "reds" },
+                {"title": "Pinot Grigio", "answer": "whites" },
+                {"title": "Moscato", "answer": "whites" },
+                {"title": "Merlot", "answer": "reds" }
+            ],
+            "checkAnswer": {
+                "correct": "Great job! You've answered correctly.",
+                "incorrect": "Sorry, red and white wines are not matched correctly"
+            },
+            "category": "main"
+        },
+        { 
+            "type": "radio",
+            "question": "Which varietal is most likely to have notes of butter and oak?",
+            "answer": "Chardonnay",
+            "options": ["Pinot Grigio", "Sauvignon Blanc", "Chardonnay", "Moscato"],
+            "options_layout": "split",
+            "checkAnswer": {
+                "correct": "Great job! You've answered correctly.",
+                "incorrect": "Sorry, the correct answer is: <strong>Chardonnay</strong>"
+            },
+            "category": "main"
+        },
+        { 
+            "type": "radio",
+            "question": "Which varietal is the least dry?",
+            "answer": "Moscato",
+            "options": ["Pinot Grigio", "Sauvignon Blanc", "Chardonnay", "Moscato"],
+            "options_layout": "split",
+            "checkAnswer": {
+                "correct": "Great job! You've answered correctly.",
+                "incorrect": "Sorry, the correct answer is: <strong>Moscato</strong>"
+            },
+            "category": "whites"
+        },
+        { 
+            "type": "radio",
+            "question": "Which varietal would be a good recommendation to pair with pasta with red sauce?",
+            "answer": "Pinot Noir",
+            "options": ["Rosé", "Chardonnay", "Pinot Noir", "Pinot Grigio"],
+            "options_layout": "split",
+            "checkAnswer": {
+                "correct": "Great job! You've answered correctly.",
+                "incorrect": "Sorry, the correct answer is: <strong>Pinot Noir</strong>"
+            },
+            "category": "main"
+        },
+        { 
+            "type": "radio",
+            "question": "Which word could be used to describe the body of a wine?",
+            "answer": "Full",
+            "options": ["Effervescent", "Semi-sweet", "Crisp", "Full"],
+            "options_layout": "split",
+            "checkAnswer": {
+                "correct": "Great job! You've answered correctly.",
+                "incorrect": "Sorry, the correct answer is: <strong>Full</strong>"
+            },
+            "category": "main"
+        },
+        { 
+            "type": "radio",
+            "question": "Which varietal would be a good recommendation to pair with a Caesar Salad?",
+            "answer": "Sauvignon Blanc",
+            "options": ["Cabernet Sauvignon", "Sauvignon Blanc", "Moscato", "Merlot"],
+            "options_layout": "split",
+            "checkAnswer": {
+                "correct": "Great job! You've answered correctly.",
+                "incorrect": "Sorry, the correct answer is: <strong>Sauvignon Blanc</strong>"
+            },
+            "category": "main"
+        },
+        { 
+            "type": "radio",
+            "question": "Which varietal is most likely to have notes of strawberry?",
+            "answer": "Rosé",
+            "options": ["Merlot", "Rosé", "Pinot Noir", "Sauvignon Blanc"],
+            "options_layout": "split",
+            "checkAnswer": {
+                "correct": "Great job! You've answered correctly.",
+                "incorrect": "Sorry, the correct answer is: <strong>Rosé</strong>"
+            },
+            "category": "other"
+        },
+        { 
+            "type": "radio",
+            "question": "Which varietal would be a good recommendation to pair with steak?",
+            "answer": "All of the above",
+            "options": ["Cabernet Sauvignon", "Pinot Noir", "Merlot", "All of the above"],
+            "options_layout": "split",
+            "checkAnswer": {
+                "correct": "Great job! You've answered correctly.",
+                "incorrect": "Sorry, the correct answer is: <strong>All of the above</strong>"
+            },
+            "category": "main"
+        },
+        { 
+            "type": "radio",
+            "question": "Which red varietal is likely to be fruitiest?",
+            "answer": "Merlot",
+            "options": ["Cabernet Sauvignon", "Merlot", "Pinot Noir"],
+            "options_layout": "stacked",
+            "checkAnswer": {
+                "correct": "Great job! You've answered correctly.",
+                "incorrect": "Sorry, the correct answer is: <strong>Merlot</strong>"
+            },
+            "category": "reds"
+        },
+        { 
+            "type": "radio",
+            "question": "Which varietal can be described as semi-sweet and light-bodied with notes of stone fruit like apricot?",
+            "answer": "Moscato",
+            "options": ["Chardonnay", "Pinot Grigio", "Moscato", "Sauvignon Blanc"],
+            "options_layout": "split",
+            "checkAnswer": {
+                "correct": "Great job! You've answered correctly.",
+                "incorrect": "Sorry, the correct answer is: <strong>Moscato</strong>"
+            },
+            "category": "main"
+        },
+        { 
+            "type": "radio",
+            "question": "Which varietal is most likely to be described as a full-bodied, dry red with notes of tobacco?",
+            "answer": "Cabernet Sauvignon",
+            "options": ["Cabernet Sauvignon", "Merlot", "Pinot Noir", "Rosé"],
+            "options_layout": "stacked",
+            "checkAnswer": {
+                "correct": "Great job! You've answered correctly.",
+                "incorrect": "Sorry, the correct answer is: <strong>Cabernet Sauvignon</strong>"
+            },
+            "category": "main"
+        },
+        { 
+            "type": "radio",
+            "question": "Where should White Wines be stored?",
+            "answer": "In a dry, cool place like a refrigerator",
+            "options": ["In a dry, cool place like a refrigerator", "In a dry, room temperature location"],
+            "options_layout": "stacked",
+            "checkAnswer": {
+                "correct": "Great job! You've answered correctly.",
+                "incorrect": "Sorry, the correct answer is: <strong>In a dry, cool place like a refrigerator</strong>"
+            },
+            "category": "serving wine 101"
+        },
+        { 
+            "type": "radio",
+            "question": "Where should Red Wines be stored?",
+            "answer": "In a dry, room temperature location",
+            "options": ["In a dry, cool place like a refrigerator", "In a dry, room temperature location"],
+            "options_layout": "stacked",
+            "checkAnswer": {
+                "correct": "Great job! You've answered correctly.",
+                "incorrect": "Sorry, the correct answer is: <strong>In a dry, room temperature location</strong>"
+            },
+            "category": "main"
+        },
+        { 
+            "type": "radio",
+            "question": "Which of the following is a good technique to sell more wine to your guests?",
+            "answer": "All of the above",
+            "options": [
+                "Offer a glass as soon as they sit down", 
+                "Suggest a glass that pairs well with their order",
+                "Offer a second glass as soon as they’ve finished their first",
+                "All of the above"
+            ],
+            "options_layout": "stacked",
+            "checkAnswer": {
+                "correct": "Great job! You've answered correctly.",
+                "incorrect": "Sorry, the correct answer is: <strong>All of the above</strong>"
+            },
+            "category": "main"
+        },
+        { 
+            "type": "radio",
+            "question": "Which of the following is a good reason to sell more wine to your guests?",
+            "answer": "All of the above",
+            "options": [
+                "They rate their dining experience higher than guests who don’t order wine", 
+                "Their average checks are higher",
+                "Their average tips are higher",
+                "All of the above"
+            ],
+            "options_layout": "stacked",
+            "checkAnswer": {
+                "correct": "Great job! You've answered correctly.",
+                "incorrect": "Sorry, the correct answer is: <strong>All of the above</strong>"
+            },
+            "category": "main"
+        }
+    ]
+}

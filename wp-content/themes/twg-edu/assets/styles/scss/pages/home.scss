@@ -1,0 +1,302 @@
+$hero_image_width: 350px;
+
+.page-home {
+    .wrapper {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        max-width: 1365px;
+        padding: 0 30px;
+    }
+
+    .hero-content {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 40px 0;
+
+        .content-left {
+            width: 100%;
+
+            @include mq(large) {
+                width: calc(100% - 550px);
+            }
+
+            @include mq(large, 'max') {
+                order: 2;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+            }
+
+            .heading-1 {
+                line-height: 1;
+                margin: 0;
+            }
+
+            img {
+                display: block;
+                padding: 20px;
+                width: 200px;
+            }
+
+            p {
+                padding: 10px 0;
+                max-width: 550px;
+            }
+
+            .btn-default {
+                margin-top: 20px;
+            }
+        }
+
+        .content-right {
+            width: 100%;
+
+            @include mq(large) {
+                width: 550px;
+            }
+
+            @include mq(large, 'max') {
+                order: 1;
+            }
+
+        }
+    }
+
+    .how-to-serve {
+        width: 100%;
+        padding: 40px 0;
+
+        .content-container {
+            display: flex;
+            border: 4px solid $black;
+
+            .content-left {
+                width: 60%;
+
+                @include mq(large, 'max') {
+                    width: 100%
+                }
+
+                .title {
+                    border-bottom: 4px solid $black;
+                    border-right: 4px solid $black;
+                    padding: 10px 10px 10px 30px;
+
+                    @include mq(large, 'max') {
+                        border-right: none;
+                        text-align: center;
+                        padding: 10px;
+                    }
+
+                    .heading-2 {
+                        line-height: 1;
+                    }
+                }
+
+                .content {
+                    padding: 30px;
+                    border-right: 4px solid $black;
+
+                    @include mq(large, 'max') {
+                        border-right: none;
+                        text-align: center;
+                    }
+
+                    .btn-container {
+                        margin-top: 20px;
+                    }
+                }
+            }
+
+            .content-right {
+                width: 40%;
+
+                @include mq(large, 'max') {
+                    width: 100%;
+                }
+            }
+
+            .image {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+
+                &.hide-for-large {
+                    height: auto !important;
+                    border-bottom: 4px solid $black;
+                    padding: 40px 0;
+                }
+                
+                img {
+                    width: 280px;
+                }
+            }
+        }
+    }
+
+    .learn-about-wines {
+        width: 100%;
+        padding: 40px 0;
+
+        .content-container {
+            .description {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+
+                p {
+                    max-width: 700px;
+                    
+                    @include mq(large, 'max') {
+                        padding: 20px 0 30px;
+                    }
+                }
+            }
+
+            .wines {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+
+                .wine-item {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+             
+                    text-align: center;
+
+                    @include mq(large) {
+                        width: 33.33%;
+                        margin-top: 40px;
+                    }
+
+                    &:hover {
+                        .title {
+                            background: $black !important;
+                        }
+                    }
+
+                    &:nth-child(1):hover .title {
+                        .heading-3 {
+                            color: $red;
+                        }
+                    }
+                    &:nth-child(2):hover .title {
+                        .heading-3 {
+                            color: $orange;
+                        }
+                    }
+                    &:nth-child(3):hover {
+                        .heading-3 {
+                            color: $pink;
+                        }
+                    }
+
+                    a {
+                        width: 100%;
+
+                        .title {
+                            padding: 25px 10px;
+                            border-top: 4px solid $black;
+                            border-left: 4px solid $black;
+                            border-bottom: 4px solid $black;
+                            transition: .25s ease-in-out;
+
+                            @include mq(large, 'max') {
+                                border-right: 4px solid $black;
+                            }
+
+
+                            .heading-3 {
+                                text-transform: uppercase;
+                                color: $black;
+
+                            }
+                        }
+                        .image {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+                            padding: 15% 50px;
+                            border-left: 4px solid $black;
+                            border-bottom: 4px solid $black;
+
+                            @include mq(large, 'max') {
+                                border-bottom: 0;
+                                border-right: 4px solid $black;
+                            }
+
+                            img {
+                                width: 267px
+                            }
+                        }
+                    }
+
+                    &:nth-child(1) .title {
+                        background: $red;
+                    }
+                    &:nth-child(2) .title {
+                        background: $orange;
+                    }
+                    &:nth-child(3) {
+                        .title {
+                            background: $pink;
+                            border-right: 4px solid $black;
+                        }
+                        .image {
+                            position: relative;
+
+                            &::after {
+                                content: '';
+                                position: absolute;
+                                right: 0;
+                                top: 0;
+                                background-color: $black;
+                                width: 4px;
+                                height: 100%;
+                            }
+
+                            @include mq(large, 'max') {
+                                border-bottom: 4px solid $black;
+                                border-right: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .certification {
+        width: 100%;
+        padding: 40px 0 60px;
+
+        .title {
+            padding: 15px 10px;
+            border: 4px solid $black;
+            text-align: center;
+            background: $green;
+        }
+
+        .content {
+            padding: 40px;
+            text-align: center;
+            border: 4px solid $black;
+            border-top: none;
+
+            p {
+                margin-bottom: 40px;
+            }
+        }
+    }
+}

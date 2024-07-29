@@ -1,0 +1,38 @@
+.copy {
+  padding: 80px 30px;
+
+  p, li, a {
+    color: $black;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px
+  }
+
+  h2 {
+    margin-top: 40px;
+  }
+
+  .heading-1 {
+    margin-bottom: 10px;
+  }
+
+  p {
+    margin-bottom: 20px;
+  }
+
+  a {
+    color: $green;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+
+  ul {
+    margin-left: 30px;
+    margin-bottom: 30px;
+
+    li {
+     
+    }
+  }
+}

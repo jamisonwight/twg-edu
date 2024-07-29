@@ -1,0 +1,144 @@
+/************************************************
+
+Stylesheet: Global Stylesheet
+
+*************************************************/
+// VARIABLES
+$content-width: calc(100% - 75px);
+$inner-content-max: 1440px;
+
+/*********************
+POSTS & CONTENT STYLES
+*********************/
+.page-title {
+	// Remove Foundation vcard styling from author page titles
+	.vcard {
+		border: 0px;
+		padding: 0px;
+	}
+}
+
+*, html {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 100%;
+	margin: 0;
+	padding: 0;
+	-webkit-font-smoothing: antialiased;
+	transition: background .45s ease;
+}
+
+.page-y-offset {
+	margin-top: 93px;
+
+	@include mq(large, 'max') {
+		margin-top: 93px;
+	}
+}
+
+.no-js {
+	@include mq(large, 'max') {
+		.header-bar {
+			display: none !important;
+		}
+	}
+}
+
+.fancybox-container {
+	z-index: 99999999990 !important;
+}
+
+.disable-link {
+	pointer-events: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+#__lpform_your-name {
+	display: none !important;
+}
+
+.progress {
+	position: relative;
+	background-color: transparent;
+	max-width: 400px;
+
+	&::after {
+		content: '';
+		position: absolute;
+		top: -16px;
+		left: 12px;
+		width: 100%;
+		height: 50px;
+		background: url(../../../assets/images/squiggly-line.svg);
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+		z-index: -1;
+	}
+
+	.progress-meter {
+		height: 16px;
+	}
+}
+
+.grid-container {
+	max-width: 100% !important;
+	padding-right: 0 !important;
+	padding-left: 0 !important;
+}
+
+.inner-content {
+	max-width: $inner-content-max;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+
+.menu .active>a {
+	background: transparent;
+	color: $black;
+}
+
+.mobile {
+	@include mq(large) {
+		display: none !important;
+	}
+}
+.desktop {
+	display: none !important;
+	
+	@include mq(large) {
+		display: block !important;
+	}
+
+}
+
+.error404 {
+	.content {
+		padding: 200px 0;
+
+		.article-header {
+			padding: 0 35px;
+			text-align: center;
+
+			a {
+				margin-top: 20px;
+			}
+		}
+
+		article {
+			text-align: center;
+
+			h1 {
+				padding-bottom: 40px;
+			}
+		}
+	}
+}

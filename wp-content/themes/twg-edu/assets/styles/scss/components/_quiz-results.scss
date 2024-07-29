@@ -1,0 +1,112 @@
+.quiz-result-page {
+    .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items:  center;
+        min-height: 70vh;
+        padding: 0 30px;
+    }
+
+    .intro-description {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        span {
+            display: block;
+        }
+
+        .title {
+            padding: 40px 0;
+            text-transform: uppercase;
+        }
+
+        .heading-1 {
+            margin-bottom: 10px;
+        }
+    }
+
+    .links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 400px;
+        text-align: center;
+        margin-top: 60px;
+
+        @include mq(large, 'max') {
+            width: 100%;
+        }
+
+        a {
+            display: block;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+    }
+}
+
+.page-quiz-passed {
+    .heading-1 {
+        color: $green;
+    }
+
+    .pdf-cert {
+        position: relative;
+
+        span {
+            padding-top: 20px;
+            display: block;
+        }
+
+        &:hover {
+            &::after {
+                background-color: transparent
+            }
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: -35px;
+            left: 50%;
+            width: 64px;
+            height: 64px;
+            transform: translateX(-50%);
+            display: block;
+            background-color: $white;
+            background: url(../../../assets/images/cert.svg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            z-index: 3;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: -35px;
+            left: 50%;
+            width: 74px;
+            height: 74px;
+            transform: translateX(-50%);
+            display: block;
+            background-color: $white;
+            z-index: 2;
+        }
+    }
+}
+
+.page-quiz-failed {
+    .heading-1 {
+        color: $red;
+    }
+}
+
+.page-quiz-certificate {
+
+}

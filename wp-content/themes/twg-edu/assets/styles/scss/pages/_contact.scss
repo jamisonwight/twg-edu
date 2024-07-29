@@ -1,0 +1,52 @@
+.contact {
+  margin-bottom: 60px;
+
+  @media not all and (min-resolution:.001dpcm)
+  { @supports (-webkit-appearance:none) {
+
+    select {
+      text-indent: calc(50% - 25px) hanging !important;
+    }
+  }}
+
+
+  .large {
+    width: 100%;
+  }
+  .medium {
+    width: 50%;
+  }
+  .small {
+    width: 33.33%;
+  }
+
+  @include mq(large, 'small') {
+    .large,
+    .medium,
+    .small {
+      width: 100%;
+    }
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="date"],
+  input[type="tel"] {
+    width: calc(100% - 10px) !important;
+  }
+
+  .wrapper {
+    padding: 40px 10px;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+
+    @include mq(large) {
+      width: 100%;
+      padding: 40px 40px;
+    }
+  }
+}

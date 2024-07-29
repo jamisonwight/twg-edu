@@ -1,0 +1,109 @@
+// Heading Styles
+
+.heading-1 {
+	font-family: futura-pt,sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 50px;
+	line-height: 1;
+
+	@include mq(large) {
+		font-size: 80px
+	}
+}
+
+.heading-2, 
+.logo-container a {
+	font-family: futura-pt,sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 30px;
+	line-height: 1;
+	color: #000;
+}
+
+.heading-3 {
+	font-family: futura-pt,sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 23px;
+}
+
+.heading-4 {
+	font-family: futura-pt,sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+
+small, .small {
+
+}
+
+sub, sup {
+   
+}
+
+p, .paragraph {
+	font-family: proxima-nova, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 16px
+}
+
+.paragraph-alt {
+	@include neuzeit-grotesk-reg;
+	font-size: 21px;
+}
+
+.page-default {
+	ul {
+		li {
+
+		}
+	}
+}
+
+ol li,
+td {
+}
+
+a {
+
+}
+
+.top-bar, .top-bar ul {
+
+	li {
+		list-style-type: none;
+
+		a {
+			
+		}
+	}
+}
+
+// Utility Styles
+.text-center {
+	text-align: center;
+}
+
+.text-center-min-large {
+	@media screen and (min-width: 1024px) {
+		text-align: center !important;
+	}
+}
+
+.text-center-max-medium {
+	@media screen and (max-width: 1023px) {
+		text-align: center !important;
+	}
+}
+
+.text-center-max-small {
+	@media screen and (max-width: 639px) {
+		text-align: center !important;
+	}
+}
