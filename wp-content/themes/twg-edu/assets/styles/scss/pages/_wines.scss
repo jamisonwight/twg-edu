@@ -31,6 +31,18 @@
         .progress-meter {
             background-color: $pink;
         }
+
+        #content-block-3 {
+            .content-wrap {
+                .description-title {
+                    background: $orange !important;
+                }
+            }
+    
+            .progress-meter {
+                background-color: $orange !important;
+            }
+        }
     }
 
     .progress {
