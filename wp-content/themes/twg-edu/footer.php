@@ -11,7 +11,7 @@
                 <li class="divider">|</li>
                 <li><a href="/privacy-policy/#ccpa">California Privacy Notice</a></li>
             </ul>
-            <div class="copyright">@<?php echo date("Y"); ?> The Wine Group, Livemore, CA</div>
+            <div class="copyright">@<?php echo date("Y"); ?> The Wine Group, Ripon, CA</div>
         </div>
         <div class="footer-logo">
             <a href="https://www.thewinegroup.com" target="_blank">
