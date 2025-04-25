@@ -19,7 +19,6 @@
     "parcel-plugin-goodie-bag": "^2.0.0",
     "parcel-plugin-inlinesvg": "^0.1.0",
     "parcel-plugin-purifycss": "^1.0.5",
-    "parcel-plugin-url-loader": "^1.2.6",
     "parcel-plugin-watch-reload": "^1.0.3",
     "sass": "^1.25.0",
     "swiper": "^8.1.4"
